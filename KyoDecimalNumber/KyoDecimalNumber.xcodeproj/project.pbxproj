@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		82FCF07724820E270053353B /* KyoDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FCF07524820E270053353B /* KyoDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82FCF081248210E90053353B /* NSDecimalNumber+KyoConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07D248210E90053353B /* NSDecimalNumber+KyoConvert.m */; };
+		82FCF082248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */; };
+		82FCF083248210E90053353B /* NSDecimalNumber+KyoOperand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */; };
+		82FCF084248210E90053353B /* NSDecimalNumber+KyoConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82FCF07224820E270053353B /* KyoDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KyoDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FCF07524820E270053353B /* KyoDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KyoDecimalNumber.h; sourceTree = "<group>"; };
 		82FCF07624820E270053353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82FCF07D248210E90053353B /* NSDecimalNumber+KyoConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+KyoConvert.m"; sourceTree = "<group>"; };
+		82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoRoundUp.swift"; sourceTree = "<group>"; };
+		82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoOperand.swift"; sourceTree = "<group>"; };
+		82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+KyoConvert.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,10 @@
 		82FCF07424820E270053353B /* KyoDecimalNumber */ = {
 			isa = PBXGroup;
 			children = (
+				82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */,
+				82FCF07D248210E90053353B /* NSDecimalNumber+KyoConvert.m */,
+				82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */,
+				82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */,
 				82FCF07524820E270053353B /* KyoDecimalNumber.h */,
 				82FCF07624820E270053353B /* Info.plist */,
 			);
@@ -59,6 +71,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FCF084248210E90053353B /* NSDecimalNumber+KyoConvert.h in Headers */,
 				82FCF07724820E270053353B /* KyoDecimalNumber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +108,7 @@
 				TargetAttributes = {
 					82FCF07124820E270053353B = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FCF082248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift in Sources */,
+				82FCF083248210E90053353B /* NSDecimalNumber+KyoOperand.swift in Sources */,
+				82FCF081248210E90053353B /* NSDecimalNumber+KyoConvert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		82FCF07B24820E270053353B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +303,7 @@
 		82FCF07C24820E270053353B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
