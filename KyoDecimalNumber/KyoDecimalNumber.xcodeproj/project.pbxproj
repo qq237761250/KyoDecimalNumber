@@ -12,13 +12,6 @@
 		82FCF082248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */; };
 		82FCF083248210E90053353B /* NSDecimalNumber+KyoOperand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */; };
 		82FCF084248210E90053353B /* NSDecimalNumber+KyoConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82FCF08C2482144B0053353B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF08B2482144B0053353B /* AppDelegate.swift */; };
-		82FCF08E2482144B0053353B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF08D2482144B0053353B /* SceneDelegate.swift */; };
-		82FCF0902482144B0053353B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF08F2482144B0053353B /* ViewController.swift */; };
-		82FCF0932482144B0053353B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FCF0912482144B0053353B /* Main.storyboard */; };
-		82FCF0952482144E0053353B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82FCF0942482144E0053353B /* Assets.xcassets */; };
-		82FCF0982482144E0053353B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FCF0962482144E0053353B /* LaunchScreen.storyboard */; };
-		82FCF09E2482146A0053353B /* KyoDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FCF07224820E270053353B /* KyoDecimalNumber.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +22,6 @@
 		82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoRoundUp.swift"; sourceTree = "<group>"; };
 		82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoOperand.swift"; sourceTree = "<group>"; };
 		82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+KyoConvert.h"; sourceTree = "<group>"; };
-		82FCF0892482144B0053353B /* KyoDecimalNumberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyoDecimalNumberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		82FCF08B2482144B0053353B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82FCF08D2482144B0053353B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82FCF08F2482144B0053353B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		82FCF0922482144B0053353B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		82FCF0942482144E0053353B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		82FCF0972482144E0053353B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		82FCF0992482144E0053353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +32,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82FCF0862482144B0053353B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82FCF09E2482146A0053353B /* KyoDecimalNumber.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				82FCF07424820E270053353B /* KyoDecimalNumber */,
-				82FCF08A2482144B0053353B /* KyoDecimalNumberDemo */,
 				82FCF07324820E270053353B /* Products */,
 				82FCF09D2482146A0053353B /* Frameworks */,
 			);
@@ -72,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				82FCF07224820E270053353B /* KyoDecimalNumber.framework */,
-				82FCF0892482144B0053353B /* KyoDecimalNumberDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,20 +63,6 @@
 				82FCF07624820E270053353B /* Info.plist */,
 			);
 			path = KyoDecimalNumber;
-			sourceTree = "<group>";
-		};
-		82FCF08A2482144B0053353B /* KyoDecimalNumberDemo */ = {
-			isa = PBXGroup;
-			children = (
-				82FCF08B2482144B0053353B /* AppDelegate.swift */,
-				82FCF08D2482144B0053353B /* SceneDelegate.swift */,
-				82FCF08F2482144B0053353B /* ViewController.swift */,
-				82FCF0912482144B0053353B /* Main.storyboard */,
-				82FCF0942482144E0053353B /* Assets.xcassets */,
-				82FCF0962482144E0053353B /* LaunchScreen.storyboard */,
-				82FCF0992482144E0053353B /* Info.plist */,
-			);
-			path = KyoDecimalNumberDemo;
 			sourceTree = "<group>";
 		};
 		82FCF09D2482146A0053353B /* Frameworks */ = {
@@ -144,23 +105,6 @@
 			productReference = 82FCF07224820E270053353B /* KyoDecimalNumber.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		82FCF0882482144B0053353B /* KyoDecimalNumberDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82FCF09A2482144E0053353B /* Build configuration list for PBXNativeTarget "KyoDecimalNumberDemo" */;
-			buildPhases = (
-				82FCF0852482144B0053353B /* Sources */,
-				82FCF0862482144B0053353B /* Frameworks */,
-				82FCF0872482144B0053353B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KyoDecimalNumberDemo;
-			productName = KyoDecimalNumberDemo;
-			productReference = 82FCF0892482144B0053353B /* KyoDecimalNumberDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,9 +118,6 @@
 					82FCF07124820E270053353B = {
 						CreatedOnToolsVersion = 11.4;
 						LastSwiftMigration = 1140;
-					};
-					82FCF0882482144B0053353B = {
-						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -194,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				82FCF07124820E270053353B /* KyoDecimalNumber */,
-				82FCF0882482144B0053353B /* KyoDecimalNumberDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -204,16 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82FCF0872482144B0053353B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82FCF0982482144E0053353B /* LaunchScreen.storyboard in Resources */,
-				82FCF0952482144E0053353B /* Assets.xcassets in Resources */,
-				82FCF0932482144B0053353B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,36 +160,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82FCF0852482144B0053353B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82FCF0902482144B0053353B /* ViewController.swift in Sources */,
-				82FCF08C2482144B0053353B /* AppDelegate.swift in Sources */,
-				82FCF08E2482144B0053353B /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		82FCF0912482144B0053353B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82FCF0922482144B0053353B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		82FCF0962482144E0053353B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82FCF0972482144E0053353B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		82FCF07824820E270053353B /* Debug */ = {
@@ -437,40 +338,6 @@
 			};
 			name = Release;
 		};
-		82FCF09B2482144E0053353B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KyoDecimalNumberDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyo.KyoDecimalNumberDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		82FCF09C2482144E0053353B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KyoDecimalNumberDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyo.KyoDecimalNumberDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,15 +355,6 @@
 			buildConfigurations = (
 				82FCF07B24820E270053353B /* Debug */,
 				82FCF07C24820E270053353B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		82FCF09A2482144E0053353B /* Build configuration list for PBXNativeTarget "KyoDecimalNumberDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82FCF09B2482144E0053353B /* Debug */,
-				82FCF09C2482144E0053353B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
