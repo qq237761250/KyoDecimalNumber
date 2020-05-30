@@ -85,11 +85,4 @@
     return yuan;
 }
 
-- (NSDecimalNumber *)convertNSStringToCurrencyFenWithSting:(NSString *)str {
-    NSDecimalNumber*coupon = [NSDecimalNumber decimalNumberWithString:str];
-    NSDecimalNumber*discount = [NSDecimalNumber decimalNumberWithString:@"100"];
-    NSDecimalNumber *afterDiscount = [coupon decimalNumberByMultiplyingBy:discount];
-    return afterDiscount;
-}
-
 @end

@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol KyoRoundUp {}
+public protocol KyoRoundUp {}
 extension String: KyoRoundUp {}
 extension NSDecimalNumber: KyoRoundUp {}
 
-extension NSDecimalNumber {
+public extension NSDecimalNumber {
     
     /// 四舍五入
     ///

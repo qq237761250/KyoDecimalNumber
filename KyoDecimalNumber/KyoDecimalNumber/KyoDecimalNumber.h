@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char KyoDecimalNumberVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KyoDecimalNumber/PublicHeader.h>
 
-
+#import <KyoDecimalNumber/NSDecimalNumber+KyoConvert.h>

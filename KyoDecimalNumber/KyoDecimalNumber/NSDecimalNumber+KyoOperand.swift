@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: ------------------------- Operand
 
-extension NSDecimalNumber {
+public extension NSDecimalNumber {
     
     static func +(origin: NSDecimalNumber?, num: NSDecimalNumber) -> NSDecimalNumber {
         return (origin ?? NSDecimalNumber.zero).adding(num)
