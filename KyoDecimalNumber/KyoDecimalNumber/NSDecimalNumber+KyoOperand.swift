@@ -1,6 +1,6 @@
 //
 //  NSDecimalNumber+KyoOperand.swift
-//  LiYu
+//  Kyo
 //
 //  Created by Kyo on 2019/8/25.
 //  Copyright © 2019 liyu. All rights reserved.

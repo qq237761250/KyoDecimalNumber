@@ -1,9 +1,9 @@
 //
 //  NSDecimalNumber+KyoConvert.m
-//  MainApp
+//  Kyo
 //
 //  Created by Kyo on 10/17/16.
-//  Copyright © 2016 hzins. All rights reserved.
+//  Copyright © 2016 Kyo. All rights reserved.
 //
 
 #import "NSDecimalNumber+KyoConvert.h"
