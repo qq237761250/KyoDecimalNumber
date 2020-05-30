@@ -59,67 +59,67 @@ public extension NSDecimalNumber {
 
 // MARK: ------------------------- Convert
 
-extension NSNumber {
+public extension NSNumber {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(decimal: self.decimalValue)
     }
 }
 
-extension String {
+public extension String {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(string: self)
     }
 }
 
-extension Float {
+public extension Float {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Double {
+public extension Double {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Bool {
+public extension Bool {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Int {
+public extension Int {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension UInt {
+public extension UInt {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Int8 {
+public extension Int8 {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Int16 {
+public extension Int16 {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Int32 {
+public extension Int32 {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
-extension Int64 {
+public extension Int64 {
     func kyo_toDecimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }

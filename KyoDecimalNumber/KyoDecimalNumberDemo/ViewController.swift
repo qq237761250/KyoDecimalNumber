@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         
         print(NSDecimalNumber.zero.kyo_formatTwoDecimals())
         print(NSDecimalNumber.zero.kyo_roundUp(type: String.self))
+        print((NSDecimalNumber.zero + NSDecimalNumber(string: "20.435")).kyo_roundUp(type: String.self))
+        print(1.kyo_toDecimalNumber() + 2.33.kyo_toDecimalNumber())
     }
 
 
