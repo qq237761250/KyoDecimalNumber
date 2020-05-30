@@ -60,67 +60,67 @@ public extension NSDecimalNumber {
 // MARK: ------------------------- Convert
 
 public extension NSNumber {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(decimal: self.decimalValue)
     }
 }
 
 public extension String {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(string: self)
     }
 }
 
 public extension Float {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Double {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Bool {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Int {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension UInt {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Int8 {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Int16 {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Int32 {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }
 
 public extension Int64 {
-    func kyo_toDecimalNumber() -> NSDecimalNumber {
+    func decimalNumber() -> NSDecimalNumber {
         return NSDecimalNumber(value: self)
     }
 }

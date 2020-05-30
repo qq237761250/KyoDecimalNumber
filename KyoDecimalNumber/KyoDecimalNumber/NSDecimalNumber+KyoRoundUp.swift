@@ -20,8 +20,8 @@ public extension NSDecimalNumber {
     ///   - fractionNum: 保留小数位的数量，不传则默认为保留2位小数
     ///   - identifier: 格式化采用的货币类型，默认"zh_CN"，即rmb
     /// - Returns: 返回指定类型数据
-    func kyo_roundUp<T>(fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRoundUp {
-        return self.kyo_roundUp(type: T.self, fractionNum: fractionNum, localeIdentifier: identifier)
+    func roundUp<T>(fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRoundUp {
+        return self.roundUp(type: T.self, fractionNum: fractionNum, localeIdentifier: identifier)
     }
     
     /// 四舍五入
@@ -31,7 +31,7 @@ public extension NSDecimalNumber {
     ///   - fractionNum: 保留小数位的数量，不传则默认为保留2位小数
     ///   - identifier: 格式化采用的货币类型，默认"zh_CN"，即rmb
     /// - Returns: 返回指定类型数据
-    func kyo_roundUp<T>(type: T.Type, fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRoundUp {
+    func roundUp<T>(type: T.Type, fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRoundUp {
         let handler: NSDecimalNumberHandler = NSDecimalNumberHandler(roundingMode: .plain,
                                                                      scale: Int16(fractionNum),
                                                                      raiseOnExactness: false,

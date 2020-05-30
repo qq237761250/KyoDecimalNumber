@@ -16,11 +16,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         print(NSDecimalNumber.zero.kyo_formatTwoDecimals())
-        print(NSDecimalNumber.zero.kyo_roundUp(type: String.self))
-        print((NSDecimalNumber.zero + NSDecimalNumber(string: "20.435")).kyo_roundUp(type: String.self))
-        print(1.kyo_toDecimalNumber() + 2.33.kyo_toDecimalNumber())
+        print(NSDecimalNumber.zero.roundUp(type: String.self))
+        print((NSDecimalNumber.zero + NSDecimalNumber(string: "20.435")).roundUp(type: String.self))
+        print(1.decimalNumber() + 2.33.decimalNumber())
     }
-
 
 }
 
