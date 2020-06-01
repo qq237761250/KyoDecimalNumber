@@ -85,7 +85,7 @@ end
 ### Manually
 if you prefer not to use the aforementioned dependency managers, you can integrate KyoDecimalNumber into your project manually. 
 * Clone or download KyoDecimalNumber to your computer.
-* Open the KyoDecimalNumber folder, and drag `NSDecimalNumber+KyoOperand.swift` `NSDecimalNumber+KyoRoundUp.swift` into the file navigator of your app project, under your app project.
+* Open the KyoDecimalNumber folder, and drag `NSDecimalNumber+KyoOperand.swift` `NSDecimalNumber+KyoRound.swift` into the file navigator of your app project, under your app project.
 * Drag `NSDecimalNumber+KyoConvert.h` `NSDecimalNumber+KyoConvert.m` to your project if you use Objective-C.
 
 # License
