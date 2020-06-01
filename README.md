@@ -10,11 +10,11 @@ You can provide the reserved number of decimal places and specify whether the da
 
 ```swift
 var price = NSDecimalNumber(string: "15.54321")
-price = price.roundUp()  //NSDecimalNumber -> 15.54
-var strPrice: String = price.roundUp()  //String -> 15.54
-strPrice = price.roundUp(fractionNum: 1)  //String -> 15.5
-let string = price.roundUp(type: String.self)  //String -> 15.54
-let decimalNumber = price.roundUp(type: NSDecimalNumber.self)  //NSDecimalNumber -> 15.54
+price = price.round()  //NSDecimalNumber -> 15.54
+var strPrice: String = price.round()  //String -> 15.54
+strPrice = price.round(fractionNum: 1)  //String -> 15.5
+let string = price.round(type: String.self)  //String -> 15.54
+let decimalNumber = price.round(type: NSDecimalNumber.self)  //NSDecimalNumber -> 15.54
 ```
 
 ### Conversion
@@ -78,7 +78,7 @@ use_frameworks!
 target '<Your Target Name>' do
   # your other pod
   # ...
-  pod 'KyoDecimalNumber', '~> 0.0.4'
+  pod 'KyoDecimalNumber', '~> 0.0.5'
 end
 ```
 
