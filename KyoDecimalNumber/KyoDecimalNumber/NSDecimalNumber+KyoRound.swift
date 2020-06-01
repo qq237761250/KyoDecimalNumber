@@ -1,5 +1,5 @@
 //
-//  NSDecimalNumber+KyoRoundUp.swift
+//  NSDecimalNumber+KyoRound.swift
 //  Kyo
 //
 //  Created by Kyo on 2019/8/25.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-public protocol KyoRoundUp {}
-extension String: KyoRoundUp {}
-extension NSDecimalNumber: KyoRoundUp {}
+public protocol KyoRound {}
+extension String: KyoRound {}
+extension NSDecimalNumber: KyoRound {}
 
 public extension NSDecimalNumber {
     
@@ -20,8 +20,8 @@ public extension NSDecimalNumber {
     ///   - fractionNum: 保留小数位的数量，不传则默认为保留2位小数
     ///   - identifier: 格式化采用的货币类型，默认"zh_CN"，即rmb
     /// - Returns: 返回指定类型数据
-    func roundUp<T>(fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRoundUp {
-        return self.roundUp(type: T.self, fractionNum: fractionNum, localeIdentifier: identifier)
+    func round<T>(fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRound {
+        return self.round(type: T.self, fractionNum: fractionNum, localeIdentifier: identifier)
     }
     
     /// 四舍五入
@@ -31,17 +31,17 @@ public extension NSDecimalNumber {
     ///   - fractionNum: 保留小数位的数量，不传则默认为保留2位小数
     ///   - identifier: 格式化采用的货币类型，默认"zh_CN"，即rmb
     /// - Returns: 返回指定类型数据
-    func roundUp<T>(type: T.Type, fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRoundUp {
+    func round<T>(type: T.Type, fractionNum: Int = 2, localeIdentifier identifier: String = "zh_CN") -> T where T: KyoRound {
         let handler: NSDecimalNumberHandler = NSDecimalNumberHandler(roundingMode: .plain,
                                                                      scale: Int16(fractionNum),
                                                                      raiseOnExactness: false,
                                                                      raiseOnOverflow: false,
                                                                      raiseOnUnderflow: false,
                                                                      raiseOnDivideByZero: true)
-        let roundUpNumber: NSDecimalNumber = self.rounding(accordingToBehavior: handler)
+        let roundNumber: NSDecimalNumber = self.rounding(accordingToBehavior: handler)
         
         if T.self is NSDecimalNumber.Type {
-            return roundUpNumber as! T
+            return roundNumber as! T
         }
         
         if T.self is String.Type {
@@ -51,7 +51,7 @@ public extension NSDecimalNumber {
             formatter.maximumFractionDigits = fractionNum    //小数位最多2位
             formatter.minimumFractionDigits = fractionNum    //小数位最少2位
             formatter.minimumIntegerDigits = 1    //整数位最少1位
-            let strFormatter: String = formatter.string(from: roundUpNumber) ?? self.stringValue
+            let strFormatter: String = formatter.string(from: roundNumber) ?? self.stringValue
             return strFormatter as! T
         }
         

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		82FCF07724820E270053353B /* KyoDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FCF07524820E270053353B /* KyoDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82FCF081248210E90053353B /* NSDecimalNumber+KyoConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07D248210E90053353B /* NSDecimalNumber+KyoConvert.m */; };
-		82FCF082248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */; };
+		82FCF082248210E90053353B /* NSDecimalNumber+KyoRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07E248210E90053353B /* NSDecimalNumber+KyoRound.swift */; };
 		82FCF083248210E90053353B /* NSDecimalNumber+KyoOperand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */; };
 		82FCF084248210E90053353B /* NSDecimalNumber+KyoConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82FCF0BE24824CC20053353B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCF0BD24824CC20053353B /* AppDelegate.swift */; };
@@ -25,7 +25,7 @@
 		82FCF07524820E270053353B /* KyoDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KyoDecimalNumber.h; sourceTree = "<group>"; };
 		82FCF07624820E270053353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82FCF07D248210E90053353B /* NSDecimalNumber+KyoConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+KyoConvert.m"; sourceTree = "<group>"; };
-		82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoRoundUp.swift"; sourceTree = "<group>"; };
+		82FCF07E248210E90053353B /* NSDecimalNumber+KyoRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoRound.swift"; sourceTree = "<group>"; };
 		82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+KyoOperand.swift"; sourceTree = "<group>"; };
 		82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+KyoConvert.h"; sourceTree = "<group>"; };
 		82FCF0BB24824CC20053353B /* KyoDecimalNumberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyoDecimalNumberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +81,7 @@
 				82FCF080248210E90053353B /* NSDecimalNumber+KyoConvert.h */,
 				82FCF07D248210E90053353B /* NSDecimalNumber+KyoConvert.m */,
 				82FCF07F248210E90053353B /* NSDecimalNumber+KyoOperand.swift */,
-				82FCF07E248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift */,
+				82FCF07E248210E90053353B /* NSDecimalNumber+KyoRound.swift */,
 				82FCF07524820E270053353B /* KyoDecimalNumber.h */,
 				82FCF07624820E270053353B /* Info.plist */,
 			);
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82FCF082248210E90053353B /* NSDecimalNumber+KyoRoundUp.swift in Sources */,
+				82FCF082248210E90053353B /* NSDecimalNumber+KyoRound.swift in Sources */,
 				82FCF083248210E90053353B /* NSDecimalNumber+KyoOperand.swift in Sources */,
 				82FCF081248210E90053353B /* NSDecimalNumber+KyoConvert.m in Sources */,
 			);
